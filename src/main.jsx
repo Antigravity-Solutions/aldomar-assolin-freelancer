@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { navigation, projects, services, steps, about } from './content'
 import './styles.css'
 
@@ -37,7 +37,7 @@ function ProjectCard({ project }) {
   </article>
 }
 
-function App() {
+export function App() {
   return <>
     <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <Header />
@@ -68,4 +68,8 @@ function App() {
   </>
 }
 
-createRoot(document.getElementById('root')).render(<App />)
+if (typeof document !== 'undefined') {
+  const root = document.getElementById('root')
+  if (root.hasChildNodes()) hydrateRoot(root, <App />)
+  else createRoot(root).render(<App />)
+}
