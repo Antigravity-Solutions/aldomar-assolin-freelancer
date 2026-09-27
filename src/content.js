@@ -53,5 +53,5 @@ export const about = {
   description: 'Sou Aldomar Assolin, também conhecido como Manex. Minha trajetória começou na indústria metal-mecânica, trabalhando com produção, qualidade e melhoria contínua. Hoje aplico essa visão de processo ao desenvolvimento web: entender o problema, organizar a solução e entregar algo útil, claro e sustentável.',
   image: '/images/about-360-450.webp',
   image2x: '/images/about-569-320.webp',
-  alt: 'Foto do desenvolvedor web Aldomar Assolin sorrindo, com óculos e barba, em frente a uma parede de tijolos.',
+  alt: 'Estação de trabalho com notebook e monitores exibindo um portfólio web e código.',
 }
